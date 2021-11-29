@@ -1,0 +1,69 @@
+﻿
+    body {
+        text-align: center;
+        background-color: #1a3557;
+    }
+
+    header {
+        height: 51px;
+        background-color: #1975d1;
+        border-radius: 5px;
+    }
+
+    header a {
+        color: #b6b52e;
+        text-decoration: none;
+        background-color: transparent;
+    }
+
+    button {
+        border-radius: 0;
+    }
+
+
+    .topnav {
+        background-color: #1975d1;
+        border-radius: 10px;
+    }
+
+    .topnav a {
+        float: left;
+        display: block;
+        color: #d2e5fa;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .topnav a:hover {
+        background-color: #d2e5fa;
+        color: #1975d1;
+    }
+
+/* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+        display: none;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .footer a {
+        color: #1975d1;
+    }
+
+    main {
+        background-color: #d2e5fa;
+        margin: auto;
+        border-radius: 8px;
+        width: 99%;
+    }

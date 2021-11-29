@@ -1,71 +1,139 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #1c0f0a;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #A5402D;
+        text-align: center;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        border-radius: 10px;
+    }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #A5402D;
+            color: #1c0f0a;
+        }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
+    /* Hide the link that should open and close the topnav on small screens */
+    .topnav .icon {
+        display: none;
+    }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    height: 98vh;
+    width: 98%;
+    /*width: fit-content;*/
+    background: linear-gradient(90deg, #1b1a1a 2%, #081270 99%)
+    /*background: radial-gradient(#1b1a1a 60%, #081270 90%)*/
+    /*background: linear-gradient(159deg, #1b1a1a 15%, #081270 89%)*/
+    /*background-color: #272525;*/
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+
+header {
+    border-radius: 10px;
+    width: fit-content;
+    padding: 20px;
 }
+
+main {
+    border: 12px solid #240c0c;
+    border-radius: 30px;
+    margin: auto;
+    width: 45%;
+    padding: 8px 100px;
+    background-color: #1b1a1a;
+}
+
+
+/*Text*/
+h1 {
+    color: #A5402D;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 36px;
+    text-decoration: underline;
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+    color: #A5402D;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 16px;
+    font-size: 35px;
+}
+
+p {
+    text-align: center;
+    color: #f3e3df;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 16px;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+dt {
+    text-align: left;
+    color: #A5402D;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 16px;
+    font-size: 26px;
+}
+
+dd {
+    text-align: left;
+    color: #f3e3df;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 16px;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+
+/* Picture*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+
+/* Scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #1b1a1a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #240c0c;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #A5402D;
+    }
