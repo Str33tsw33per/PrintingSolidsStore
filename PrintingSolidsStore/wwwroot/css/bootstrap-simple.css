@@ -4,17 +4,13 @@
         background-color: #1a3557;
     }
 
-    header {
-        height: 51px;
-        background-color: #1975d1;
-        border-radius: 5px;
-    }
+header {
+    height: 51px;
+    background-color: #1975d1;
+    border-radius: 8px;
+    color: #b6b52e;
+}
 
-    header a {
-        color: #b6b52e;
-        text-decoration: none;
-        background-color: transparent;
-    }
 
     button {
         border-radius: 0;
@@ -23,7 +19,7 @@
 
     .topnav {
         background-color: #1975d1;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     .topnav a {
@@ -31,12 +27,12 @@
         display: block;
         color: #d2e5fa;
         text-align: center;
-        font-weight: bold;
+        font-weight: 550;
         font-family: Arial, Helvetica, sans-serif;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 20px;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
     .topnav a:hover {
@@ -61,9 +57,10 @@
         color: #1975d1;
     }
 
-    main {
-        background-color: #d2e5fa;
-        margin: auto;
-        border-radius: 8px;
-        width: 99%;
-    }
+main {
+    background-color: #d2e5fa;
+    margin: auto;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 450px;
+}
