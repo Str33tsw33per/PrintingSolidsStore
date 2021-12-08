@@ -1,36 +1,37 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewData["Title"] - Printing Solids Store</title>
-        <link rel="stylesheet" href="~/css/bootstrap-simple.css" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Printing Solids Store</title>
+    <link rel="stylesheet" href="~/css/bootstrap-simple.css" />
 
-    </head>
+</head>
 
 
-    <body>
-        <header>
-            <div class="topnav">
-                <a asp-area="" asp-controller="Home" asp-action="Index">Printing Solids Store</a>
-                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                <a asp-area="" asp-controller="ProductListView" asp-action="ProductListView">Store</a>
-            </div>
-        </header>
-       
-        <main role="main">
-            @RenderBody()
-        </main>
-        
+<body>
+    <header>
+        <div class="topnav">
+            <a asp-area="" asp-controller="Home" asp-action="Index">Printing Solids Store</a>
+            <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-area="" asp-controller="Home" asp-action="Store">Store</a>
+        </div>
+    </header>
 
-        <footer>
-            <div class="footer">
-                &copy; 2021 - PrintingSolidsStore - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            </div>
-        </footer>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
-        @await RenderSectionAsync("Scripts", required: false)
-    </body>
+    <main role="main">
+        @RenderBody()
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            &copy; 2021 - PrintingSolidsStore - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
 </html>
