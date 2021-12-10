@@ -2,9 +2,10 @@
 
 <h1>Printing Solids Store</h1>
 
-<table class="table">
+<table class="center contentBox">
+
     <thead>
-        <tr>
+        <tr class="text-subt-dark">
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -17,17 +18,15 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
+            <tr class="text-norm-light">
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Price)
+                    $@Html.DisplayFor(modelItem => item.Price)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.ProductID">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.ProductID">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.ProductID">Delete</a>
+                    <a class="button-dark" asp-action="UserDetails" asp-route-id="@item.ProductID">Details</a>
                 </td>
             </tr>
         }

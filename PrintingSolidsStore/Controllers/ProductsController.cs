@@ -25,8 +25,30 @@ namespace PrintingSolidsStore.Controllers
             return View(await _context.Products.ToListAsync());
         }
 
+        public async Task<IActionResult> Store()
+        {
+            return View(await _context.Products.ToListAsync());
+        }
+
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products
+                .FirstOrDefaultAsync(m => m.ProductID == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
+        }
+
+        public async Task<IActionResult> UserDetails(int? id)
         {
             if (id == null)
             {

@@ -19,10 +19,7 @@ namespace PrintingSolidsStore.Controllers
         {
             return View();
         }
-        public IActionResult Store()
-        {
-            return View();
-        }
+        
 
 
 
