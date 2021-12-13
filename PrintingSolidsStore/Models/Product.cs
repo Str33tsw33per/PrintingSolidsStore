@@ -18,7 +18,7 @@ namespace PrintingSolidsStore.Models
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
 
-        //public String Description { get; set; }
+        public String Description { get; set; }
 
         //public int ProductImage { get; set; }
 

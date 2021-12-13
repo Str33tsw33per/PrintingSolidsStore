@@ -76,7 +76,7 @@ namespace PrintingSolidsStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductID,Name,Price")] Product product)
+        public async Task<IActionResult> Create([Bind("ProductID,Name,Price,Description")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -108,7 +108,7 @@ namespace PrintingSolidsStore.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ProductID,Name,Price")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductID,Name,Price,Description")] Product product)
         {
             if (id != product.ProductID)
             {
